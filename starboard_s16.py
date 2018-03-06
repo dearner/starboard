@@ -56,7 +56,7 @@ class Drop:
             self.strength = 0
         self.draw()
     def draw(self):
-        matrix.SetPixel(x, y, self.b*(self.strength), self.g*(self.strength), self.r*(self.strength))
+        matrix.SetPixel(self.x, self.y, self.b*(self.strength), self.g*(self.strength), self.r*(self.strength))
         if (random.random() < .001):
             matrix.SetPixel(self.x, self.y, self.altb, self.altg, self.altr)
 
